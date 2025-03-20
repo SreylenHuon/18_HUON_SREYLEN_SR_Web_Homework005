@@ -28,7 +28,7 @@ const CategoryBarComponent = ({ listBook, listCartoon }) => {
 
   return (
     <main>
-      <div className="flex border-b-2 border-blue-500 justify-between items-center pb-5">
+      <div className="flex border-b-2 border-blue-500 justify-between p-5 items-center px-10">
         <h2 className="bg-gray-100 p-3 rounded-2xl text-lg font-semibold">
           {pageTitle}
         </h2>

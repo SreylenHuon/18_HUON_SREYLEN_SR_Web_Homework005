@@ -6,27 +6,27 @@ const BookCardComponent = async ({ dataBooks }) => {
   const { payload } = dataBooks;
 
   return (
-    <main className="grid grid-cols-2 gap-[120px] p-[40px] mt-5 overflow-y-auto h-screen">
+    <main className="grid grid-cols-2 h-screen p-[40px] gap-[100px] mt-[60px] overflow-y-auto">
       {payload.map((data, index) => (
         <div
           key={index}
-          className="relative flex items-center p-5 bg-[#F5F7F8] rounded-[30px] shadow-md h-[300px] w-[600px]"
+          className="flex bg-[#F5F7F8] h-[300px] p-4 rounded-[30px] shadow-md w-[500px] items-center relative"
         >
           {/* Image */}
           <Image
             src={data.image}
             alt={data.book_title}
-            width={200}
-            height={180}
-            className="absolute bottom-[85px] left-7 rounded-[20px]"
+            width={180}
+            height={280}
+            className="rounded-[20px] absolute bottom-[85px] left-7"
           />
 
           {/* Content Container */}
-          <div className="ml-[250px] flex flex-col justify-center max-w-[350px]">
-            <h2 className="text-2xl font-bold text-[#0B3954] truncate">
+          <div className="flex flex-col justify-center max-w-[250px] ml-[200px]">
+            <h2 className="text-[#0B3954] text-2xl font-bold truncate">
               {data.book_title}
             </h2>
-            <p className="mt-1 text-sm text-[#0B3954] line-clamp-3">
+            <p className="text-[#0B3954] text-sm line-clamp-3 mt-1">
               {data.description}
             </p>
           </div>
@@ -38,7 +38,7 @@ const BookCardComponent = async ({ dataBooks }) => {
             }?type=book&name=book+categories&title=${encodeURIComponent(
               data.book_title
             )}`}
-            className="uppercase bg-[#BED6E9] absolute bottom-0 px-3.5 py-2.5 rounded-full w-45 hover:bg-deep-teal hover:text-ghost-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1"
+            className="bg-[#BED6E9] rounded-full w-45 absolute bottom-5 delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:bg-deep-teal hover:text-ghost-white px-3.5 py-4 transition uppercase"
           >
             Read Full Book
           </Link>

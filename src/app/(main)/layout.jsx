@@ -20,14 +20,14 @@ export default async function RootLayout({ children, pageTitle }) {
         <div>
           <SearchBarComponent />
         </div>
-        <div className="flex flex-col bg-white h-[100vh] p-10 rounded-4xl mt-[10px]">
+        <div className="flex flex-col bg-white h-[100vh] rounded-4xl mt-[10px]">
           <div>
             <CategoryBarComponent
               listBook={listBook}
               listCartoon={listCartoon}
             />
           </div>
-          <div className="flex justify-center gap-[20px] mt-[100px]">
+          <div className="flex justify-center gap-[20px] mt-[40px]">
             {children}
           </div>
         </div>

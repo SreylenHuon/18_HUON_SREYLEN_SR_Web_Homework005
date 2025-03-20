@@ -3,16 +3,16 @@ import React from "react";
 
 const FlowbiteBreadCrumbComponent = async ({ pageTitle, bookTitle }) => {
   return (
-    <main>
+    <main className="px-20">
       <nav className="flex" aria-label="Breadcrumb">
-        <ol className="text-4xl inline-flex items-center md:space-x-2 rtl:space-x-reverse space-x-1">
+        <ol className="text-[28px] font-medium inline-flex items-center md:space-x-2 rtl:space-x-reverse space-x-1">
           <li className="inline-flex items-center">
             <Link
               href="/"
               className="text-gray-700 dark:hover:text-white dark:text-gray-400 font-medium hover:text-blue-600 inline-flex items-center"
             >
               <svg
-                className="h-3 w-3 me-2.5"
+                className="h-7 w-5 me-2.5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -44,7 +44,7 @@ const FlowbiteBreadCrumbComponent = async ({ pageTitle, bookTitle }) => {
                 href={`${
                   pageTitle === "Book Categories" ? "/book" : "/cartoon"
                 }`}
-                className="text-gray-700 text-sm dark:hover:text-white dark:text-gray-400 font-medium hover:text-blue-600 md:ms-2 ms-1"
+                className="text-[28px] text-gray-700 dark:hover:text-white dark:text-gray-400 font-medium hover:text-blue-600 md:ms-2 ms-1"
               >
                 {pageTitle}
               </Link>
@@ -67,7 +67,7 @@ const FlowbiteBreadCrumbComponent = async ({ pageTitle, bookTitle }) => {
                   d="m1 9 4-4-4-4"
                 />
               </svg>
-              <span className="text-gray-500 text-sm dark:text-gray-400 font-medium md:ms-2 ms-1">
+              <span className="text-[28px] text-rose-700 dark:text-gray-400 font-medium md:ms-2 ms-1">
                 {bookTitle}
               </span>
             </div>
