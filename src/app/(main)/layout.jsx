@@ -20,7 +20,7 @@ export default async function RootLayout({ children, pageTitle }) {
         <div>
           <SearchBarComponent />
         </div>
-        <div className="flex flex-col bg-white h-[100vh] rounded-4xl mt-[10px]">
+        <div className="flex flex-col bg-white h-[100vh] rounded-4xl mt-[10px] p-10">
           <div>
             <CategoryBarComponent
               listBook={listBook}
