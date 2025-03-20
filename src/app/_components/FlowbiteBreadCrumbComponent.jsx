@@ -36,7 +36,7 @@ const FlowbiteBreadCrumbComponent = async ({ pageTitle, bookTitle }) => {
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
@@ -63,7 +63,7 @@ const FlowbiteBreadCrumbComponent = async ({ pageTitle, bookTitle }) => {
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
